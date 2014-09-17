@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACF6EDD5F7344B5D935B5BC1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 559694CA087143F789A3FD5A /* libPods.a */; };
 		C976D9A919BD02AD008F21B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C976D9A819BD02AD008F21B9 /* Foundation.framework */; };
 		C976D9AB19BD02AD008F21B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C976D9AA19BD02AD008F21B9 /* CoreGraphics.framework */; };
 		C976D9AD19BD02AD008F21B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C976D9AC19BD02AD008F21B9 /* UIKit.framework */; };
@@ -14,14 +15,19 @@
 		C976D9B519BD02AD008F21B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C976D9B419BD02AD008F21B9 /* main.m */; };
 		C976D9B919BD02AD008F21B9 /* MPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C976D9B819BD02AD008F21B9 /* MPSAppDelegate.m */; };
 		C976D9BC19BD02AD008F21B9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C976D9BA19BD02AD008F21B9 /* Main_iPhone.storyboard */; };
-		C976D9BF19BD02AD008F21B9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C976D9BD19BD02AD008F21B9 /* Main_iPad.storyboard */; };
-		C976D9C219BD02AD008F21B9 /* MPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C976D9C119BD02AD008F21B9 /* MPSViewController.m */; };
 		C976D9C419BD02AD008F21B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C976D9C319BD02AD008F21B9 /* Images.xcassets */; };
 		C976D9CB19BD02AE008F21B9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C976D9CA19BD02AE008F21B9 /* XCTest.framework */; };
 		C976D9CC19BD02AE008F21B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C976D9A819BD02AD008F21B9 /* Foundation.framework */; };
 		C976D9CD19BD02AE008F21B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C976D9AC19BD02AD008F21B9 /* UIKit.framework */; };
 		C976D9D519BD02AE008F21B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C976D9D319BD02AE008F21B9 /* InfoPlist.strings */; };
 		C976D9D719BD02AE008F21B9 /* SWAGLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C976D9D619BD02AE008F21B9 /* SWAGLibraryTests.m */; };
+		C976D9E219BD0442008F21B9 /* MPSAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C976D9E119BD0442008F21B9 /* MPSAPI.m */; };
+		C976D9E619BD087C008F21B9 /* MPSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C976D9E519BD087C008F21B9 /* MPSConstants.m */; };
+		C976DA3B19BE57DE008F21B9 /* MPSFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C976DA3A19BE57DE008F21B9 /* MPSFeedViewController.m */; };
+		C976DA4119BE62B9008F21B9 /* MPSTemplateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C976DA4019BE62B9008F21B9 /* MPSTemplateCell.m */; };
+		C976DA4419BE660D008F21B9 /* MPSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C976DA4319BE660D008F21B9 /* MPSDetailViewController.m */; };
+		C9C0A70819BEA9540009CC3D /* MPSBook.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C0A70719BEA9540009CC3D /* MPSBook.m */; };
+		C9C0A70B19C778230009CC3D /* MPSLabelLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C0A70A19C778230009CC3D /* MPSLabelLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		163D73C4F9FA4A0EBDEB89E4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		559694CA087143F789A3FD5A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C976D9A519BD02AD008F21B9 /* SWAGLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWAGLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C976D9A819BD02AD008F21B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C976D9AA19BD02AD008F21B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,15 +54,26 @@
 		C976D9B719BD02AD008F21B9 /* MPSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPSAppDelegate.h; sourceTree = "<group>"; };
 		C976D9B819BD02AD008F21B9 /* MPSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPSAppDelegate.m; sourceTree = "<group>"; };
 		C976D9BB19BD02AD008F21B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		C976D9BE19BD02AD008F21B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		C976D9C019BD02AD008F21B9 /* MPSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPSViewController.h; sourceTree = "<group>"; };
-		C976D9C119BD02AD008F21B9 /* MPSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPSViewController.m; sourceTree = "<group>"; };
 		C976D9C319BD02AD008F21B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C976D9C919BD02AE008F21B9 /* SWAGLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWAGLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C976D9CA19BD02AE008F21B9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C976D9D219BD02AE008F21B9 /* SWAGLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SWAGLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		C976D9D419BD02AE008F21B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C976D9D619BD02AE008F21B9 /* SWAGLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWAGLibraryTests.m; sourceTree = "<group>"; };
+		C976D9E019BD0442008F21B9 /* MPSAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSAPI.h; sourceTree = "<group>"; };
+		C976D9E119BD0442008F21B9 /* MPSAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSAPI.m; sourceTree = "<group>"; };
+		C976D9E419BD087C008F21B9 /* MPSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSConstants.h; sourceTree = "<group>"; };
+		C976D9E519BD087C008F21B9 /* MPSConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSConstants.m; sourceTree = "<group>"; };
+		C976DA3919BE57DE008F21B9 /* MPSFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSFeedViewController.h; sourceTree = "<group>"; };
+		C976DA3A19BE57DE008F21B9 /* MPSFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSFeedViewController.m; sourceTree = "<group>"; };
+		C976DA3F19BE62B9008F21B9 /* MPSTemplateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSTemplateCell.h; sourceTree = "<group>"; };
+		C976DA4019BE62B9008F21B9 /* MPSTemplateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSTemplateCell.m; sourceTree = "<group>"; };
+		C976DA4219BE660D008F21B9 /* MPSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSDetailViewController.h; sourceTree = "<group>"; };
+		C976DA4319BE660D008F21B9 /* MPSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSDetailViewController.m; sourceTree = "<group>"; };
+		C9C0A70619BEA9540009CC3D /* MPSBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSBook.h; sourceTree = "<group>"; };
+		C9C0A70719BEA9540009CC3D /* MPSBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSBook.m; sourceTree = "<group>"; };
+		C9C0A70919C778230009CC3D /* MPSLabelLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSLabelLayout.h; sourceTree = "<group>"; };
+		C9C0A70A19C778230009CC3D /* MPSLabelLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSLabelLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +84,7 @@
 				C976D9AB19BD02AD008F21B9 /* CoreGraphics.framework in Frameworks */,
 				C976D9AD19BD02AD008F21B9 /* UIKit.framework in Frameworks */,
 				C976D9A919BD02AD008F21B9 /* Foundation.framework in Frameworks */,
+				ACF6EDD5F7344B5D935B5BC1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +108,7 @@
 				C976D9D019BD02AE008F21B9 /* SWAGLibraryTests */,
 				C976D9A719BD02AD008F21B9 /* Frameworks */,
 				C976D9A619BD02AD008F21B9 /* Products */,
+				163D73C4F9FA4A0EBDEB89E4 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +128,7 @@
 				C976D9AA19BD02AD008F21B9 /* CoreGraphics.framework */,
 				C976D9AC19BD02AD008F21B9 /* UIKit.framework */,
 				C976D9CA19BD02AE008F21B9 /* XCTest.framework */,
+				559694CA087143F789A3FD5A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,12 +136,17 @@
 		C976D9AE19BD02AD008F21B9 /* SWAGLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				C9C0A70919C778230009CC3D /* MPSLabelLayout.h */,
+				C9C0A70A19C778230009CC3D /* MPSLabelLayout.m */,
+				C9C0A70619BEA9540009CC3D /* MPSBook.h */,
+				C9C0A70719BEA9540009CC3D /* MPSBook.m */,
+				C976D9E419BD087C008F21B9 /* MPSConstants.h */,
+				C976D9E519BD087C008F21B9 /* MPSConstants.m */,
 				C976D9B719BD02AD008F21B9 /* MPSAppDelegate.h */,
 				C976D9B819BD02AD008F21B9 /* MPSAppDelegate.m */,
-				C976D9BA19BD02AD008F21B9 /* Main_iPhone.storyboard */,
-				C976D9BD19BD02AD008F21B9 /* Main_iPad.storyboard */,
-				C976D9C019BD02AD008F21B9 /* MPSViewController.h */,
-				C976D9C119BD02AD008F21B9 /* MPSViewController.m */,
+				C976DA3419BE02F3008F21B9 /* Controllers */,
+				C976DA3519BE0369008F21B9 /* Views */,
+				C976D9E319BD0454008F21B9 /* API */,
 				C976D9C319BD02AD008F21B9 /* Images.xcassets */,
 				C976D9AF19BD02AD008F21B9 /* Supporting Files */,
 			);
@@ -155,6 +182,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C976D9E319BD0454008F21B9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C976D9E019BD0442008F21B9 /* MPSAPI.h */,
+				C976D9E119BD0442008F21B9 /* MPSAPI.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		C976DA3419BE02F3008F21B9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C976DA3919BE57DE008F21B9 /* MPSFeedViewController.h */,
+				C976DA3A19BE57DE008F21B9 /* MPSFeedViewController.m */,
+				C976DA4219BE660D008F21B9 /* MPSDetailViewController.h */,
+				C976DA4319BE660D008F21B9 /* MPSDetailViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C976DA3519BE0369008F21B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C976D9BA19BD02AD008F21B9 /* Main_iPhone.storyboard */,
+				C976DA3F19BE62B9008F21B9 /* MPSTemplateCell.h */,
+				C976DA4019BE62B9008F21B9 /* MPSTemplateCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C976D9DA19BD02AE008F21B9 /* Build configuration list for PBXNativeTarget "SWAGLibrary" */;
 			buildPhases = (
+				BDE275607E9140A3ACB55C60 /* Check Pods Manifest.lock */,
 				C976D9A119BD02AD008F21B9 /* Sources */,
 				C976D9A219BD02AD008F21B9 /* Frameworks */,
 				C976D9A319BD02AD008F21B9 /* Resources */,
+				19E963D6620D4CBD88700A1D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,7 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C976D9BF19BD02AD008F21B9 /* Main_iPad.storyboard in Resources */,
 				C976D9C419BD02AD008F21B9 /* Images.xcassets in Resources */,
 				C976D9BC19BD02AD008F21B9 /* Main_iPhone.storyboard in Resources */,
 				C976D9B319BD02AD008F21B9 /* InfoPlist.strings in Resources */,
@@ -249,14 +307,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19E963D6620D4CBD88700A1D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDE275607E9140A3ACB55C60 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C976D9A119BD02AD008F21B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C0A70B19C778230009CC3D /* MPSLabelLayout.m in Sources */,
 				C976D9B519BD02AD008F21B9 /* main.m in Sources */,
+				C976D9E619BD087C008F21B9 /* MPSConstants.m in Sources */,
+				C976DA4119BE62B9008F21B9 /* MPSTemplateCell.m in Sources */,
+				C976DA4419BE660D008F21B9 /* MPSDetailViewController.m in Sources */,
+				C976D9E219BD0442008F21B9 /* MPSAPI.m in Sources */,
+				C976DA3B19BE57DE008F21B9 /* MPSFeedViewController.m in Sources */,
 				C976D9B919BD02AD008F21B9 /* MPSAppDelegate.m in Sources */,
-				C976D9C219BD02AD008F21B9 /* MPSViewController.m in Sources */,
+				C9C0A70819BEA9540009CC3D /* MPSBook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +390,6 @@
 				C976D9BB19BD02AD008F21B9 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		C976D9BD19BD02AD008F21B9 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C976D9BE19BD02AD008F21B9 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		C976D9D319BD02AE008F21B9 /* InfoPlist.strings */ = {
@@ -388,26 +477,32 @@
 		};
 		C976D9DB19BD02AE008F21B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 163D73C4F9FA4A0EBDEB89E4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SWAGLibrary/SWAGLibrary-Prefix.pch";
 				INFOPLIST_FILE = "SWAGLibrary/SWAGLibrary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		C976D9DC19BD02AE008F21B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 163D73C4F9FA4A0EBDEB89E4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SWAGLibrary/SWAGLibrary-Prefix.pch";
 				INFOPLIST_FILE = "SWAGLibrary/SWAGLibrary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +566,7 @@
 				C976D9DC19BD02AE008F21B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C976D9DD19BD02AE008F21B9 /* Build configuration list for PBXNativeTarget "SWAGLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +575,7 @@
 				C976D9DF19BD02AE008F21B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
